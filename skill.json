@@ -1,0 +1,73 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "All of your favourites in one place, OTH Radio, Only The Hits!",
+          "examplePhrases": [
+            "Alexa, Open Only The Hits Radio",
+            "Alexa, Start Only The Hits Radio",
+            "Alexa, Play Only The Hits Radio"
+          ],
+          "keywords": [],
+          "name": "Only The Hits Radio",
+          "description": "You can now listen to OTH Radio on your Alexa enabled-smart devices.\n\nAll of your favourites in one place, OTH Radio, Only The Hits!",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No such Instructions.",
+      "category": "STREAMING_SERVICE",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:611676491484:function:75d0e1d1-39a5-4097-b8e3-d9d480142916:Release_0"
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:611676491484:function:75d0e1d1-39a5-4097-b8e3-d9d480142916:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:611676491484:function:75d0e1d1-39a5-4097-b8e3-d9d480142916:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:611676491484:function:75d0e1d1-39a5-4097-b8e3-d9d480142916:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
